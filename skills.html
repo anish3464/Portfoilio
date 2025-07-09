@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Skills - Muhammed Anish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+  </div>
+  
   <nav>
     <div class="logo">Anish</div>
     <ul>
@@ -16,6 +23,7 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+  
   <section class="content">
     <h2>Skills</h2>
     <ul class="skills">
@@ -25,5 +33,25 @@
       <li><strong>Cybersecurity:</strong> ELK, QRadar, Microsoft Sentinel, MITRE ATT&CK</li>
     </ul>
   </section>
+  
+  <script>
+    // Loading animation
+    window.addEventListener('load', () => {
+      const loading = document.getElementById('loading');
+      setTimeout(() => {
+        loading.classList.add('hidden');
+      }, 1000);
+    });
+    
+    // Navigation scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 100) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>

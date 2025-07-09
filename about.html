@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>About - Muhammed Anish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+  </div>
+  
   <nav>
     <div class="logo">Anish</div>
     <ul>
@@ -16,14 +23,39 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+  
   <section class="content">
     <h2>About Me</h2>
-    <p>I'm Muhammed Anish, a final-year CSE student at SRM University, passionate about cybersecurity, full-stack development, and infrastructure automation. From threat detection at TechensGlobal to deploying Django-based cloud platforms at FabroLeather, I enjoy building secure and scalable solutions.</p>
+    <div class="card">
+      <p>I'm Muhammed Anish, a final-year CSE student at SRM University, passionate about cybersecurity, full-stack development, and infrastructure automation. From threat detection at TechensGlobal to deploying Django-based cloud platforms at FabroLeather, I enjoy building secure and scalable solutions.</p>
+    </div>
+    
+    <h3 style="margin: 3rem 0 2rem 0; font-size: 2rem; color: var(--primary);">My Journey</h3>
     <ul class="timeline">
       <li><strong>B.Tech - SRM University</strong><br>Major in CSE | CGPA 9.56 | Aug 2021 – Jun 2025</li>
       <li><strong>SOC Intern – TechensGlobal</strong><br>Threat analysis with ELK, QRadar, Sentinel</li>
       <li><strong>Networking Intern – GlobIT</strong><br>Routing, switching, VPN config</li>
     </ul>
   </section>
+  
+  <script>
+    // Loading animation
+    window.addEventListener('load', () => {
+      const loading = document.getElementById('loading');
+      setTimeout(() => {
+        loading.classList.add('hidden');
+      }, 1000);
+    });
+    
+    // Navigation scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 100) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
