@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Muhammed Anish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+  </div>
+  
+  <nav>
+    <div class="logo">Anish</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <section class="content">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I'm Muhammed Anish, a Computer Science graduate at SRM University, passionate about cybersecurity, full-stack development, and infrastructure automation. From threat detection at TechensGlobal to deploying Django-based cloud platforms at FabroLeather, I enjoy building secure and scalable solutions. My work spans threat detection in enterprise SOC environments, AI-based biomedical applications, and robust backend systems. I have built projects like a secure complaint management system (FabroLeather) and a Carcinogen Detector using ChemBERTa and LLaMA. With hands-on experience in Django, Docker, AWS, and SIEM tools like ELK and QRadar, I try to bridge the gap between development and security. I am also actively preparing for the CompTIA Security+ certification and rank among the top 10 in my college on Codeforces.</p>
+    </div>
+    
+    <h3 style="margin: 3rem 0 2rem 0; font-size: 2rem; color: var(--primary);">My Journey</h3>    
+    <!-- Education Section -->
+    <div class="experience-card education-card">
+      <div class="experience-header">
+        <div class="experience-icon">🎓</div>
+        <div class="experience-info">
+          <h3>Bachelor of Technology (B.Tech) - Computer Science Engineering</h3>
+          <h4>SRM Institute of Science and Technology, Chennai</h4>
+          <div class="experience-meta">
+            <span class="duration">August 2021 – June 2025</span>
+            <span class="highlight">CGPA: 9.56 / 10.00</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="experience-content">
+        <p>At SRM University, I pursued a rigorous and multifaceted CSE curriculum, exploring core domains like data structures, operating systems, networks, cryptography, and machine learning. I developed a strong foundation in both <strong>software development</strong> and <strong>security engineering</strong>.</p>
+        
+        <div class="highlights-grid">
+          <div class="highlight-item">
+            <span class="highlight-icon">🏆</span>
+            <div>
+              <strong>Top Academic Performance</strong>
+              <p>Consistently in top percentile with high grades in OS, Networks, Cybersecurity, and Cloud Computing</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">💻</span>
+            <div>
+              <strong>Competitive Programming</strong>
+              <p>Ranked 8th in college on Codeforces; regular contest participation</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🔬</span>
+            <div>
+              <strong>Research Contribution</strong>
+              <p>Presented research on Oncogene Detection at NEIR Conference</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🚀</span>
+            <div>
+              <strong>Project Development</strong>
+              <p>Built full-stack projects including FabroLeather and Carcinogen Detector</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Experience Timeline -->
+    <ul class="timeline">
+      
+      <!-- Network Engineering Intern -->
+      <li class="timeline-item" data-experience="network">
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-icon">🌐</div>
+            <div>
+              <strong>Network Engineering Intern – GlobIT Business Solutions</strong>
+              <div class="timeline-meta">
+                <span class="duration">Dec 2023 – Jan 2024</span>
+                <span class="location">1 month intensive program</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-summary">
+            <p>Focused on <strong>Enterprise Routing, Switching, and VPN Tunneling</strong> under CCIE-certified mentorship</p>
+          </div>
+          
+          <button class="expand-btn" onclick="toggleExperience('network')">
+            <span class="expand-text">View Details</span>
+            <span class="expand-icon">▼</span>
+          </button>
+          
+          <div class="timeline-details" id="network-details">
+            <div class="details-section">
+              <h4>🛠️ Technical Skills Acquired</h4>
+              <ul class="skills-list">
+                <li>Fundamentals of Routing Protocols (RIP, OSPF)</li>
+                <li>VLAN creation, trunking, and inter-VLAN routing</li>
+                <li>Static vs Dynamic routing & path selection</li>
+                <li>VPN concepts and site-to-site VPN configuration</li>
+                <li>Cisco CLI commands and network simulation</li>
+              </ul>
+            </div>
+            
+            <div class="details-section">
+              <h4>⚙️ Hands-on Projects</h4>
+              <ul class="project-list">
+                <li>Configured routers and switches for LAN/WAN simulation</li>
+                <li>Designed and tested basic VPN tunnels for secure remote access</li>
+                <li>Built subnetting and routing setup for small office network</li>
+                <li>Used Packet Tracer & GNS3 for network simulation</li>
+              </ul>
+            </div>
+            
+            <div class="details-section">
+              <h4>🌟 Key Takeaway</h4>
+              <p>This internship laid the groundwork for my understanding of <strong>network architecture</strong>, <strong>security</strong>, and <strong>enterprise-grade deployments</strong>, directly influencing my later work in cybersecurity and DevOps.</p>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- SOC Analyst Intern -->
+      <li class="timeline-item" data-experience="soc">
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-icon">🛡️</div>
+            <div>
+              <strong>SOC Analyst Intern – TechensGlobal</strong>
+              <div class="timeline-meta">
+                <span class="duration">May 2025 – Present</span>
+                <span class="location">Remote/Hybrid</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-summary">
+            <p>Real-time threat monitoring and log analysis for global clients, including <strong>Coca-Cola</strong></p>
+          </div>
+          
+          <button class="expand-btn" onclick="toggleExperience('soc')">
+            <span class="expand-text">View Details</span>
+            <span class="expand-icon">▼</span>
+          </button>
+          
+          <div class="timeline-details" id="soc-details">
+            <div class="details-section">
+              <h4>🔧 SIEM Tools & Platforms</h4>
+              <div class="tools-grid">
+                <span class="tool-tag">Microsoft Sentinel</span>
+                <span class="tool-tag">IBM QRadar</span>
+                <span class="tool-tag">ELK Stack</span>
+                <span class="tool-tag">MITRE ATT&CK</span>
+                <span class="tool-tag">Python Scripting</span>
+              </div>
+            </div>
+            
+            <div class="details-section">
+              <h4>🔍 Key Responsibilities</h4>
+              <ul class="responsibility-list">
+                <li>Monitored network and system logs for suspicious activity across multiple enterprise environments</li>
+                <li>Conducted first-level triage and escalation of alerts following established playbooks</li>
+                <li>Correlated logs from firewalls, endpoints, and cloud environments</li>
+                <li>Documented incident response workflows and participated in alert fine-tuning</li>
+              </ul>
+            </div>
+            
+            <div class="details-section">
+              <h4>🌟 Achievements</h4>
+              <ul class="achievement-list">
+                <li>Gained hands-on exposure to enterprise-grade SOC environments</li>
+                <li>Independently handled multiple real-time incident escalations</li>
+                <li>Contributed to tuning correlation rules to reduce false positives</li>
+                <li>Mastered MITRE ATT&CK framework mapping to real alerts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+  </section>
+  
+  <script>
+    // Loading animation
+    window.addEventListener('load', () => {
+      const loading = document.getElementById('loading');
+      setTimeout(() => {
+        loading.classList.add('hidden');
+      }, 1000);
+    });
+    
+    // Navigation scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 100) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Experience expansion functionality
+    function toggleExperience(experienceId) {
+      const details = document.getElementById(experienceId + '-details');
+      const button = document.querySelector(`[data-experience="${experienceId}"] .expand-btn`);
+      const icon = button.querySelector('.expand-icon');
+      const text = button.querySelector('.expand-text');
+      
+      if (details.classList.contains('expanded')) {
+        details.classList.remove('expanded');
+        icon.textContent = '▼';
+        text.textContent = 'View Details';
+        button.classList.remove('expanded');
+      } else {
+        details.classList.add('expanded');
+        icon.textContent = '▲';
+        text.textContent = 'Hide Details';
+        button.classList.add('expanded');
+      }
+    }
+
+    // Smooth scroll animation for timeline items
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.timeline-item, .experience-card').forEach(item => {
+      observer.observe(item);
+    });
+  </script>
+</body>
+</html>
