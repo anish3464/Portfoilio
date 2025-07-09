@@ -72,6 +72,50 @@
         </div>
       </div>
 
+      <!-- Network Intrusion Detection System Project -->
+      <div class="project-card" data-project="nids">
+        <div class="project-header">
+          <div class="project-icon">🔐</div>
+          <div class="project-status">Research</div>
+        </div>
+        <h3>Network Intrusion Detection System (NIDS)</h3>
+        <p class="project-summary">A machine learning-powered intrusion detection system to classify and analyze network activity for attack detection.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Flask</span>
+          <span class="tech-tag">scikit-learn</span>
+          <span class="tech-tag">Docker</span>
+        </div>
+        <div class="project-actions">
+          <button class="btn-secondary" onclick="openModal('nids')">View Details</button>
+          <a href="#" target="_blank" class="btn-outline">
+            <span>🐙</span> GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- TravelTroppTalk Project -->
+      <div class="project-card" data-project="travel">
+        <div class="project-header">
+          <div class="project-icon">🌍</div>
+          <div class="project-status">Development</div>
+        </div>
+        <h3>TravelTroppTalk – Travel Forum Platform</h3>
+        <p class="project-summary">A Django-based community forum for travelers to discuss public transport, food, safety, and cultural tips across countries.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Django</span>
+          <span class="tech-tag">SQLite3</span>
+          <span class="tech-tag">HTML/CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="project-actions">
+          <button class="btn-secondary" onclick="openModal('travel')">View Details</button>
+          <a href="#" target="_blank" class="btn-outline">
+            <span>🐙</span> GitHub
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -328,6 +372,278 @@
         <div class="challenge-item">
           <strong>Deployment:</strong> Chrome extension for website scanning, mobile app integration
         </div>
+    </div>
+  </div>
+
+  <!-- Network Intrusion Detection System Modal Content -->
+  <div id="nids-modal" class="modal-template">
+    <div class="modal-header">
+      <div class="modal-icon">🔐</div>
+      <div>
+        <h2>Network Intrusion Detection System (NIDS)</h2>
+        <p class="modal-subtitle">A machine learning-powered intrusion detection system to classify and analyze network activity</p>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🔧 Tech Stack</h3>
+      <div class="tech-grid">
+        <div class="tech-category">
+          <h4>Backend & ML</h4>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Flask</span>
+          <span class="tech-tag">scikit-learn</span>
+        </div>
+        <div class="tech-category">
+          <h4>Data Processing</h4>
+          <span class="tech-tag">pandas</span>
+          <span class="tech-tag">joblib</span>
+          <span class="tech-tag">NSL-KDD Dataset</span>
+        </div>
+        <div class="tech-category">
+          <h4>Deployment</h4>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Heroku</span>
+          <span class="tech-tag">Flask Templates</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🧭 Problem Context</h3>
+      <p>This project addresses the growing need for real-time network defense due to increasing cyberattacks. Traditional rule-based IDSs are often limited in detecting zero-day threats.</p>
+      <p>My NIDS uses <strong>machine learning models trained on NSL-KDD</strong>, a standardized dataset used in academic research for anomaly-based intrusion detection.</p>
+    </div>
+
+    <div class="modal-section">
+      <h3>📚 Dataset & Features</h3>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h4>📊 NSL-KDD Dataset</h4>
+          <ul>
+            <li>Refined version of KDD Cup '99 dataset</li>
+            <li>Preprocessed network connection features</li>
+            <li>Protocol type, service, flag, byte counts</li>
+            <li>Login attempts and error rates</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🏷️ Attack Classifications</h4>
+          <ul>
+            <li><strong>Normal:</strong> Legitimate traffic</li>
+            <li><strong>DoS:</strong> Denial of Service attacks</li>
+            <li><strong>Probe:</strong> Surveillance and probing</li>
+            <li><strong>R2L:</strong> Remote to Local attacks</li>
+            <li><strong>U2R:</strong> User to Root attacks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Features</h3>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h4>🤖 Multiclass Classification</h4>
+          <ul>
+            <li>Detects 5 attack categories with high accuracy</li>
+            <li>Minimal false positives in production testing</li>
+            <li>Real-time prediction capabilities</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🌐 Web Interface</h4>
+          <ul>
+            <li>User-friendly form for connection statistics</li>
+            <li>Instant prediction output display</li>
+            <li>Categorized input fields for easy use</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>📈 Explainable Features</h4>
+          <ul>
+            <li>Basic connection features (duration, bytes)</li>
+            <li>Content-based features (login attempts)</li>
+            <li>Time-based and host-based statistics</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🐳 Dockerized Deployment</h4>
+          <ul>
+            <li>Complete containerization with Dockerfile</li>
+            <li>Heroku-ready with Procfile configuration</li>
+            <li>Scalable API for integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>💡 Technical Challenges</h3>
+      <div class="challenges-grid">
+        <div class="challenge-item">
+          <strong>Dimensionality Reduction:</strong> Handling 41 feature vectors efficiently
+        </div>
+        <div class="challenge-item">
+          <strong>Attack Generalization:</strong> Ensuring model works across different attack categories
+        </div>
+        <div class="challenge-item">
+          <strong>UI Integration:</strong> Building usable interface on top of complex ML classifier
+        </div>
+        <div class="challenge-item">
+          <strong>False Positive Control:</strong> Maintaining 99%+ accuracy while minimizing false alarms
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>📈 Results & Detection</h3>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number">99%+</div>
+          <div class="result-text">Classification accuracy on test set</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">Satan & Portsweep</div>
+          <div class="result-text">Successfully detected attack patterns</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">Neptune DoS</div>
+          <div class="result-text">Identified denial of service attacks</div>
+        </div>
+      </div>
+      <p style="margin-top: 1rem; color: var(--text-secondary);">
+        Deployment-ready ML pipeline with Flask interface that can be integrated into real-world low-resource environments for traffic-level monitoring.
+      </p>
+    </div>
+  </div>
+
+  <!-- TravelTroppTalk Modal Content -->
+  <div id="travel-modal" class="modal-template">
+    <div class="modal-header">
+      <div class="modal-icon">🌍</div>
+      <div>
+        <h2>TravelTroppTalk – Travel Forum Platform</h2>
+        <p class="modal-subtitle">A Django-based community forum for travelers to share experiences and tips</p>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🔧 Tech Stack</h3>
+      <div class="tech-grid">
+        <div class="tech-category">
+          <h4>Backend</h4>
+          <span class="tech-tag">Django</span>
+          <span class="tech-tag">SQLite3</span>
+          <span class="tech-tag">Django ORM</span>
+        </div>
+        <div class="tech-category">
+          <h4>Frontend</h4>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="tech-category">
+          <h4>Authentication</h4>
+          <span class="tech-tag">Django Auth</span>
+          <span class="tech-tag">User Sessions</span>
+          <span class="tech-tag">Password Hashing</span>
+        </div>
+        <div class="tech-category">
+          <h4>Future Plans</h4>
+          <span class="tech-tag">Vercel</span>
+          <span class="tech-tag">Railway</span>
+          <span class="tech-tag">AI Chatbot</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🌐 Project Purpose</h3>
+      <p>While travel review sites like TripAdvisor focus on structured reviews, TravelTroppTalk is designed for <strong>open-ended Q&A style interaction</strong> — travelers helping each other in real time, like StackOverflow for tourism.</p>
+      <p>The platform enables authentic peer-to-peer knowledge sharing about public transport, local food, safety tips, and cultural insights across different countries.</p>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Features</h3>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h4>👥 User Management</h4>
+          <ul>
+            <li>Secure user registration and authentication</li>
+            <li>Profile management with travel preferences</li>
+            <li>Session-based login system</li>
+            <li>Password hashing for security</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>💬 Discussion System</h4>
+          <ul>
+            <li>Post questions in categorized topics</li>
+            <li>Comment-based discussion threads</li>
+            <li>Real-time interaction between travelers</li>
+            <li>Upvoting and community moderation</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🏷️ Organization Features</h4>
+          <ul>
+            <li>Country-based tagging and filtering</li>
+            <li>Category sorting (Food, Transport, Culture)</li>
+            <li>Advanced search functionality</li>
+            <li>Topic-based content discovery</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🚀 Future Enhancements</h4>
+          <ul>
+            <li>AI-powered chatbot for instant answers</li>
+            <li>REST API for mobile app integration</li>
+            <li>Historical discussion analysis</li>
+            <li>Personalized travel recommendations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>💡 Technical Achievements</h3>
+      <div class="challenges-grid">
+        <div class="challenge-item">
+          <strong>Responsive Design:</strong> Built mobile-friendly frontend from scratch
+        </div>
+        <div class="challenge-item">
+          <strong>Django Mastery:</strong> Learned ORM, form handling, and template rendering
+        </div>
+        <div class="challenge-item">
+          <strong>Security Implementation:</strong> Secure authentication with hashed passwords
+        </div>
+        <div class="challenge-item">
+          <strong>NLP Integration:</strong> Experimented with chatbot using basic NLP pipelines
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>📈 Platform Categories</h3>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number">🍽️</div>
+          <div class="result-text">Food & Local Cuisine</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">🚌</div>
+          <div class="result-text">Public Transport Tips</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">🏛️</div>
+          <div class="result-text">Culture & Traditions</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">🛡️</div>
+          <div class="result-text">Safety & Security</div>
+        </div>
+      </div>
     </div>
   </div>
 
