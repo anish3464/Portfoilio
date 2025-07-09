@@ -179,6 +179,54 @@ nav a.active {
   50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.8; }
 }
 
+/* Profile Photo */
+.profile-photo {
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out 0.1s both;
+}
+
+.profile-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.profile-photo::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--primary), var(--secondary), var(--accent));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: rotate 3s linear infinite;
+}
+
+.profile-photo:hover::before {
+  opacity: 0.7;
+}
+
+.profile-photo:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 204, 0.5);
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .hero h1 {
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 800;
@@ -187,7 +235,7 @@ nav a.active {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: fadeInUp 1s ease-out;
+  animation: fadeInUp 1s ease-out 0.2s both;
 }
 
 .hero p {
@@ -195,7 +243,7 @@ nav a.active {
   color: var(--text-secondary);
   margin-bottom: 2rem;
   max-width: 600px;
-  animation: fadeInUp 1s ease-out 0.2s both;
+  animation: fadeInUp 1s ease-out 0.3s both;
 }
 
 @keyframes fadeInUp {
@@ -225,7 +273,7 @@ nav a.active {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  animation: fadeInUp 1s ease-out 0.4s both;
+  animation: fadeInUp 1s ease-out 0.5s both;
 }
 
 .btn::before {
