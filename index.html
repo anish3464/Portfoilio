@@ -14,26 +14,958 @@
     <div class="spinner"></div>
   </div>
   
-  <nav>
-    <div class="logo">Anish</div>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Anish</div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
   </nav>
   
-  <header class="hero">
-    <div class="profile-photo">
-      <img src="images/WhatsApp Image 2025-07-09 at 12.47.50_883c4dfb.jpg" alt="Muhammed Anish" />
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="profile-photo">
+        <img src="images/WhatsApp Image 2025-07-09 at 12.47.50_883c4dfb.jpg" alt="Muhammed Anish" />
+      </div>
+      <h1 class="hero-title">Muhammed Anish</h1>
+      <p class="hero-subtitle">Cybersecurity Analyst | Full Stack Developer</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <a href="#projects" class="btn btn-secondary">View Projects</a>
+      </div>
     </div>
-    <h1>Muhammed Anish</h1>
-    <p>Cybersecurity Analyst | Full Stack Developer</p>
-    <a href="contact.html" class="btn">Get in Touch</a>
-  </header>
+  </section>
   
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      
+      <div class="intro-card">
+        <p class="intro-text">
+          Muhammed Anish is a final-year Computer Science Engineering student at SRM Institute of Science and Technology with a strong focus on cybersecurity, full-stack development, and infrastructure automation. His work spans threat detection in enterprise SOC environments, AI-based biomedical applications, and robust backend systems. He has built projects like a secure complaint management system (FabroLeather) and a Carcinogen Detector using ChemBERTa and LLaMA. With hands-on experience in Django, Docker, AWS, and SIEM tools like ELK and QRadar, Anish bridges the gap between development and security. He is also actively preparing for the CompTIA Security+ certification and ranks among the top 10 in his college on Codeforces.
+        </p>
+      </div>
+
+      <!-- Education -->
+      <div class="education-section">
+        <h3 class="subsection-title">Education</h3>
+        <div class="education-card">
+          <div class="education-header">
+            <div class="education-icon">🎓</div>
+            <div class="education-info">
+              <h4>Bachelor of Technology (B.Tech) - Computer Science Engineering</h4>
+              <h5>SRM Institute of Science and Technology, Chennai</h5>
+              <div class="education-meta">
+                <span class="duration">August 2021 – June 2025</span>
+                <span class="highlight">CGPA: 9.56 / 10.00</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="education-content">
+            <p>At SRM University, I pursued a rigorous and multifaceted CSE curriculum, exploring core domains like data structures, operating systems, networks, cryptography, and machine learning. I developed a strong foundation in both <strong>software development</strong> and <strong>security engineering</strong>.</p>
+            
+            <div class="highlights-grid">
+              <div class="highlight-item">
+                <span class="highlight-icon">🏆</span>
+                <div>
+                  <strong>Top Academic Performance</strong>
+                  <p>Consistently in top percentile with high grades in OS, Networks, Cybersecurity, and Cloud Computing</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">💻</span>
+                <div>
+                  <strong>Competitive Programming</strong>
+                  <p>Ranked 8th in college on Codeforces; regular contest participation</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🔬</span>
+                <div>
+                  <strong>Research Contribution</strong>
+                  <p>Presented research on Oncogene Detection at NEIR Conference</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🚀</span>
+                <div>
+                  <strong>Project Development</strong>
+                  <p>Built full-stack projects including FabroLeather and Carcinogen Detector</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Timeline -->
+      <div class="experience-section">
+        <h3 class="subsection-title">Professional Experience</h3>
+        <div class="timeline">
+          
+          <!-- Network Engineering Intern -->
+          <div class="timeline-item" data-experience="network">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-icon">🌐</div>
+                <div>
+                  <strong>Network Engineering Intern – GlobIT Business Solutions</strong>
+                  <div class="timeline-meta">
+                    <span class="duration">Dec 2023 – Jan 2024</span>
+                    <span class="location">1 month intensive program</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="timeline-summary">
+                <p>Focused on <strong>Enterprise Routing, Switching, and VPN Tunneling</strong> under CCIE-certified mentorship</p>
+              </div>
+              
+              <button class="expand-btn" onclick="toggleExperience('network')">
+                <span class="expand-text">View Details</span>
+                <span class="expand-icon">▼</span>
+              </button>
+              
+              <div class="timeline-details" id="network-details">
+                <div class="details-section">
+                  <h4>🛠️ Technical Skills Acquired</h4>
+                  <ul class="skills-list">
+                    <li>Fundamentals of Routing Protocols (RIP, OSPF)</li>
+                    <li>VLAN creation, trunking, and inter-VLAN routing</li>
+                    <li>Static vs Dynamic routing & path selection</li>
+                    <li>VPN concepts and site-to-site VPN configuration</li>
+                    <li>Cisco CLI commands and network simulation</li>
+                  </ul>
+                </div>
+                
+                <div class="details-section">
+                  <h4>⚙️ Hands-on Projects</h4>
+                  <ul class="project-list">
+                    <li>Configured routers and switches for LAN/WAN simulation</li>
+                    <li>Designed and tested basic VPN tunnels for secure remote access</li>
+                    <li>Built subnetting and routing setup for small office network</li>
+                    <li>Used Packet Tracer & GNS3 for network simulation</li>
+                  </ul>
+                </div>
+                
+                <div class="details-section">
+                  <h4>🌟 Key Takeaway</h4>
+                  <p>This internship laid the groundwork for my understanding of <strong>network architecture</strong>, <strong>security</strong>, and <strong>enterprise-grade deployments</strong>, directly influencing my later work in cybersecurity and DevOps.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SOC Analyst Intern -->
+          <div class="timeline-item" data-experience="soc">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-icon">🛡️</div>
+                <div>
+                  <strong>SOC Analyst Intern – TechensGlobal</strong>
+                  <div class="timeline-meta">
+                    <span class="duration">May 2025 – Present</span>
+                    <span class="location">Remote/Hybrid</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="timeline-summary">
+                <p>Real-time threat monitoring and log analysis for global clients, including <strong>Coca-Cola</strong></p>
+              </div>
+              
+              <button class="expand-btn" onclick="toggleExperience('soc')">
+                <span class="expand-text">View Details</span>
+                <span class="expand-icon">▼</span>
+              </button>
+              
+              <div class="timeline-details" id="soc-details">
+                <div class="details-section">
+                  <h4>🔧 SIEM Tools & Platforms</h4>
+                  <div class="tools-grid">
+                    <span class="tool-tag">Microsoft Sentinel</span>
+                    <span class="tool-tag">IBM QRadar</span>
+                    <span class="tool-tag">ELK Stack</span>
+                    <span class="tool-tag">MITRE ATT&CK</span>
+                    <span class="tool-tag">Python Scripting</span>
+                  </div>
+                </div>
+                
+                <div class="details-section">
+                  <h4>🔍 Key Responsibilities</h4>
+                  <ul class="responsibility-list">
+                    <li>Monitored network and system logs for suspicious activity across multiple enterprise environments</li>
+                    <li>Conducted first-level triage and escalation of alerts following established playbooks</li>
+                    <li>Correlated logs from firewalls, endpoints, and cloud environments</li>
+                    <li>Documented incident response workflows and participated in alert fine-tuning</li>
+                  </ul>
+                </div>
+                
+                <div class="details-section">
+                  <h4>🌟 Achievements</h4>
+                  <ul class="achievement-list">
+                    <li>Gained hands-on exposure to enterprise-grade SOC environments</li>
+                    <li>Independently handled multiple real-time incident escalations</li>
+                    <li>Contributed to tuning correlation rules to reduce false positives</li>
+                    <li>Mastered MITRE ATT&CK framework mapping to real alerts</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        
+        <!-- FabroLeather Project -->
+        <div class="project-card" data-project="fabro">
+          <div class="project-header">
+            <div class="project-icon">🚘</div>
+            <div class="project-status production">Production</div>
+          </div>
+          <h3>FabroLeather – Car Seat Management System</h3>
+          <p class="project-summary">A secure full-stack platform for tracking car seat issues and managing engineering data at Fabro Leather.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-secondary" onclick="openModal('fabro')">View Details</button>
+            <a href="https://github.com/anish3464/Fabro-Leather-Portal" target="_blank" class="btn btn-outline">
+              <span>🐙</span> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Carcinogen Detector Project -->
+        <div class="project-card" data-project="carcinogen">
+          <div class="project-header">
+            <div class="project-icon">🔬</div>
+            <div class="project-status research">Research</div>
+          </div>
+          <h3>Carcinogen Detector – Product Safety Analyzer</h3>
+          <p class="project-summary">AI-driven tool to identify carcinogenic ingredients in commercial products using OCR + deep learning.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">ChemBERTa</span>
+            <span class="tech-tag">LLaMA 3.2</span>
+            <span class="tech-tag">OCR</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-secondary" onclick="openModal('carcinogen')">View Details</button>
+            <a href="https://github.com/Kundanikapradhan/carcinogenic_chemical-detection-in-products" target="_blank" class="btn btn-outline">
+              <span>🐙</span> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Network Intrusion Detection System Project -->
+        <div class="project-card" data-project="nids">
+          <div class="project-header">
+            <div class="project-icon">🔐</div>
+            <div class="project-status research">Research</div>
+          </div>
+          <h3>Network Intrusion Detection System (NIDS)</h3>
+          <p class="project-summary">A machine learning-powered intrusion detection system to classify and analyze network activity for attack detection.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">scikit-learn</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-secondary" onclick="openModal('nids')">View Details</button>
+            <a href="#" target="_blank" class="btn btn-outline">
+              <span>🐙</span> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- TravelTroppTalk Project -->
+        <div class="project-card" data-project="travel">
+          <div class="project-header">
+            <div class="project-icon">🌍</div>
+            <div class="project-status development">Development</div>
+          </div>
+          <h3>TravelTroopTalk – Travel Forum Platform</h3>
+          <p class="project-summary">A Django-based community forum for travelers to discuss public transport, food, safety, and cultural tips across countries.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">SQLite3</span>
+            <span class="tech-tag">HTML/CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-secondary" onclick="openModal('travel')">View Details</button>
+            <a href="#" target="_blank" class="btn btn-outline">
+              <span>🐙</span> GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-icon">💻</div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-icon">🛠️</div>
+          <h3>Frameworks & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-icon">☁️</div>
+          <h3>Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS (EC2, S3)</span>
+            <span class="skill-tag">Docker Compose</span>
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">Ansible</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-icon">🛡️</div>
+          <h3>Cybersecurity</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">ELK Stack</span>
+            <span class="skill-tag">QRadar</span>
+            <span class="skill-tag">Microsoft Sentinel</span>
+            <span class="skill-tag">MITRE ATT&CK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-content">
+        <div class="contact-form-container">
+          <form class="contact-form" action="mailto:muhammedanish3464@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+          
+          <div class="contact-links">
+            <a href="mailto:muhammedanish3464@gmail.com" class="contact-link">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <p>muhammedanish3464@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammed-anish-5b206b224/" target="_blank" class="contact-link">
+              <span class="contact-icon">💼</span>
+              <div>
+                <strong>LinkedIn</strong>
+                <p>Connect with me</p>
+              </div>
+            </a>
+            <a href="https://github.com/anish3464" target="_blank" class="contact-link">
+              <span class="contact-icon">🐙</span>
+              <div>
+                <strong>GitHub</strong>
+                <p>Check out my code</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Modal Templates (same as before) -->
+  <div id="fabro-modal" class="modal-template">
+    <div class="modal-header">
+      <div class="modal-icon">🚘</div>
+      <div>
+        <h2>FabroLeather – Car Seat Management System</h2>
+        <p class="modal-subtitle">A secure full-stack platform for tracking car seat issues and managing engineering data</p>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🔧 Tech Stack</h3>
+      <div class="tech-grid">
+        <div class="tech-category">
+          <h4>Backend</h4>
+          <span class="tech-tag">Django (Python)</span>
+          <span class="tech-tag">PostgreSQL</span>
+        </div>
+        <div class="tech-category">
+          <h4>Frontend</h4>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="tech-category">
+          <h4>DevOps</h4>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">AWS EC2</span>
+          <span class="tech-tag">S3</span>
+        </div>
+        <div class="tech-category">
+          <h4>Infrastructure</h4>
+          <span class="tech-tag">Ansible</span>
+          <span class="tech-tag">Terraform</span>
+          <span class="tech-tag">Nginx</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🚘 Problem Solved</h3>
+      <p>Fabro Leather needed a comprehensive solution to:</p>
+      <ul class="feature-list">
+        <li>Track complaints from car manufacturers related to seats</li>
+        <li>Manage dimensional data with CAD files</li>
+        <li>Control access based on user roles (admin, engineer, manager)</li>
+        <li>Allow secure media uploads from the field</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Features</h3>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h4>📋 Complaint Management</h4>
+          <ul>
+            <li>Add/view/edit/delete complaints</li>
+            <li>Filter/search by channel, date, or car details</li>
+            <li>Inline media preview (image & video)</li>
+            <li>Status workflows (open → in progress → resolved)</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🚗 Car Hierarchy Database</h4>
+          <ul>
+            <li>Brand → Model → Year → Sub-Model</li>
+            <li>Unique layout codes with seat/door configs</li>
+            <li>Auto-detection of duplicates with modal warnings</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>📱 Media Upload & Preview</h4>
+          <ul>
+            <li>Multiple images/videos per complaint</li>
+            <li>Inline previews, hover video playback</li>
+            <li>Files stored on AWS S3 per complaint folder</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🔒 Security & Access Control</h4>
+          <ul>
+            <li>Role-based Access Control (RBAC)</li>
+            <li>Signed S3 URLs for file access</li>
+            <li>Audit logging of user actions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>💡 Challenges & Solutions</h3>
+      <div class="challenges-grid">
+        <div class="challenge-item">
+          <strong>Dynamic Dropdowns:</strong> Managing dependent dropdowns across multiple models
+        </div>
+        <div class="challenge-item">
+          <strong>S3 Integration:</strong> Efficient per-complaint folder organization
+        </div>
+        <div class="challenge-item">
+          <strong>Duplicate Prevention:</strong> Fuzzy matching to avoid duplicate car entries
+        </div>
+        <div class="challenge-item">
+          <strong>Video Optimization:</strong> Hover playback without heavy bandwidth usage
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>📈 Results & Impact</h3>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number">60%</div>
+          <div class="result-text">Reduction in complaint resolution time</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">100%</div>
+          <div class="result-text">Secure access for field engineers</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">t3.micro</div>
+          <div class="result-text">Successfully deployed on AWS EC2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carcinogen Detector Modal Content -->
+  <div id="carcinogen-modal" class="modal-template">
+    <div class="modal-header">
+      <div class="modal-icon">🔬</div>
+      <div>
+        <h2>Carcinogen Detector – Product Safety Analyzer</h2>
+        <p class="modal-subtitle">AI-driven tool to identify carcinogenic ingredients using OCR + deep learning</p>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🔧 Tech Stack</h3>
+      <div class="tech-grid">
+        <div class="tech-category">
+          <h4>AI & ML</h4>
+          <span class="tech-tag">ChemBERTa</span>
+          <span class="tech-tag">LLaMA 3.2</span>
+          <span class="tech-tag">HuggingFace</span>
+        </div>
+        <div class="tech-category">
+          <h4>Backend</h4>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Flask</span>
+          <span class="tech-tag">Tesseract OCR</span>
+        </div>
+        <div class="tech-category">
+          <h4>Data Sources</h4>
+          <span class="tech-tag">PubChem API</span>
+          <span class="tech-tag">SMILES</span>
+          <span class="tech-tag">IARC Data</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🧪 Problem Solved</h3>
+      <p>Many cosmetics, shampoos, and food items contain chemicals flagged as potential carcinogens. Most consumers are unaware of these risks.</p>
+      <p>This project allows users to <strong>scan a product label</strong> and get a <strong>detailed carcinogen risk report</strong> powered by LLMs and chemical datasets.</p>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Features</h3>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h4>📷 OCR Ingredient Extraction</h4>
+          <ul>
+            <li>Extract ingredients from product label images</li>
+            <li>Clean and standardize chemical names</li>
+            <li>Handle multiple languages and formats</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🧬 SMILES Mapping</h4>
+          <ul>
+            <li>Fetch chemical structures from PubChem</li>
+            <li>Generate molecular fingerprints</li>
+            <li>Resolve ambiguous chemical names</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🤖 AI Classification</h4>
+          <ul>
+            <li>Fine-tuned ChemBERTa for carcinogen prediction</li>
+            <li>Training on IARC/NIH labeled datasets</li>
+            <li>Confidence scoring and risk levels</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>💬 LLM Explanations</h4>
+          <ul>
+            <li>LLaMA 3.2 explains why chemicals are flagged</li>
+            <li>Plain-language risk explanations</li>
+            <li>Source citations and confidence scores</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>💡 Technical Challenges</h3>
+      <div class="challenges-grid">
+        <div class="challenge-item">
+          <strong>Name Standardization:</strong> Inconsistent ingredient names across regions/products
+        </div>
+        <div class="challenge-item">
+          <strong>PubChem Resolution:</strong> Multiple matches for similar chemical names
+        </div>
+        <div class="challenge-item">
+          <strong>Limited Training Data:</strong> Tuning ChemBERTa on sparse labeled datasets
+        </div>
+        <div class="challenge-item">
+          <strong>LLM Grounding:</strong> Preventing hallucinations in explanations
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>📈 Results & Detection</h3>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number">90%+</div>
+          <div class="result-text">Prediction accuracy on test set</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">Formaldehyde</div>
+          <div class="result-text">Successfully detected in cosmetics</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">Parabens & SLS</div>
+          <div class="result-text">Common dangerous compounds identified</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h3>📈 Future Potential</h3>
+      <div class="challenges-grid">
+        <div class="challenge-item">
+          <strong>Deployment:</strong> Chrome extension for website scanning, mobile app integration
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Network Intrusion Detection System Modal Content -->
+  <div id="nids-modal" class="modal-template">
+    <div class="modal-header">
+      <div class="modal-icon">🔐</div>
+      <div>
+        <h2>Network Intrusion Detection System (NIDS)</h2>
+        <p class="modal-subtitle">A machine learning-powered intrusion detection system to classify and analyze network activity</p>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🔧 Tech Stack</h3>
+      <div class="tech-grid">
+        <div class="tech-category">
+          <h4>Backend & ML</h4>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Flask</span>
+          <span class="tech-tag">scikit-learn</span>
+        </div>
+        <div class="tech-category">
+          <h4>Data Processing</h4>
+          <span class="tech-tag">pandas</span>
+          <span class="tech-tag">joblib</span>
+          <span class="tech-tag">NSL-KDD Dataset</span>
+        </div>
+        <div class="tech-category">
+          <h4>Deployment</h4>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Heroku</span>
+          <span class="tech-tag">Flask Templates</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🧭 Problem Context</h3>
+      <p>This project addresses the growing need for real-time network defense due to increasing cyberattacks. Traditional rule-based IDSs are often limited in detecting zero-day threats.</p>
+      <p>My NIDS uses <strong>machine learning models trained on NSL-KDD</strong>, a standardized dataset used in academic research for anomaly-based intrusion detection.</p>
+    </div>
+
+    <div class="modal-section">
+      <h3>📚 Dataset & Features</h3>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h4>📊 NSL-KDD Dataset</h4>
+          <ul>
+            <li>Refined version of KDD Cup '99 dataset</li>
+            <li>Preprocessed network connection features</li>
+            <li>Protocol type, service, flag, byte counts</li>
+            <li>Login attempts and error rates</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🏷️ Attack Classifications</h4>
+          <ul>
+            <li><strong>Normal:</strong> Legitimate traffic</li>
+            <li><strong>DoS:</strong> Denial of Service attacks</li>
+            <li><strong>Probe:</strong> Surveillance and probing</li>
+            <li><strong>R2L:</strong> Remote to Local attacks</li>
+            <li><strong>U2R:</strong> User to Root attacks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Features</h3>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h4>🤖 Multiclass Classification</h4>
+          <ul>
+            <li>Detects 5 attack categories with high accuracy</li>
+            <li>Minimal false positives in production testing</li>
+            <li>Real-time prediction capabilities</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🌐 Web Interface</h4>
+          <ul>
+            <li>User-friendly form for connection statistics</li>
+            <li>Instant prediction output display</li>
+            <li>Categorized input fields for easy use</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>📈 Explainable Features</h4>
+          <ul>
+            <li>Basic connection features (duration, bytes)</li>
+            <li>Content-based features (login attempts)</li>
+            <li>Time-based and host-based statistics</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🐳 Dockerized Deployment</h4>
+          <ul>
+            <li>Complete containerization with Dockerfile</li>
+            <li>Heroku-ready with Procfile configuration</li>
+            <li>Scalable API for integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>💡 Technical Challenges</h3>
+      <div class="challenges-grid">
+        <div class="challenge-item">
+          <strong>Dimensionality Reduction:</strong> Handling 41 feature vectors efficiently
+        </div>
+        <div class="challenge-item">
+          <strong>Attack Generalization:</strong> Ensuring model works across different attack categories
+        </div>
+        <div class="challenge-item">
+          <strong>UI Integration:</strong> Building usable interface on top of complex ML classifier
+        </div>
+        <div class="challenge-item">
+          <strong>False Positive Control:</strong> Maintaining 99%+ accuracy while minimizing false alarms
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>📈 Results & Detection</h3>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number">99%+</div>
+          <div class="result-text">Classification accuracy on test set</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">Satan & Portsweep</div>
+          <div class="result-text">Successfully detected attack patterns</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">Neptune DoS</div>
+          <div class="result-text">Identified denial of service attacks</div>
+        </div>
+      </div>
+      <p style="margin-top: 1rem; color: var(--text-secondary);">
+        Deployment-ready ML pipeline with Flask interface that can be integrated into real-world low-resource environments for traffic-level monitoring.
+      </p>
+    </div>
+  </div>
+
+  <!-- TravelTroppTalk Modal Content -->
+  <div id="travel-modal" class="modal-template">
+    <div class="modal-header">
+      <div class="modal-icon">🌍</div>
+      <div>
+        <h2>TravelTroppTalk – Travel Forum Platform</h2>
+        <p class="modal-subtitle">A Django-based community forum for travelers to share experiences and tips</p>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🔧 Tech Stack</h3>
+      <div class="tech-grid">
+        <div class="tech-category">
+          <h4>Backend</h4>
+          <span class="tech-tag">Django</span>
+          <span class="tech-tag">SQLite3</span>
+          <span class="tech-tag">Django ORM</span>
+        </div>
+        <div class="tech-category">
+          <h4>Frontend</h4>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="tech-category">
+          <h4>Authentication</h4>
+          <span class="tech-tag">Django Auth</span>
+          <span class="tech-tag">User Sessions</span>
+          <span class="tech-tag">Password Hashing</span>
+        </div>
+        <div class="tech-category">
+          <h4>Future Plans</h4>
+          <span class="tech-tag">Vercel</span>
+          <span class="tech-tag">Railway</span>
+          <span class="tech-tag">AI Chatbot</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🌐 Project Purpose</h3>
+      <p>While travel review sites like TripAdvisor focus on structured reviews, TravelTroppTalk is designed for <strong>open-ended Q&A style interaction</strong> — travelers helping each other in real time, like StackOverflow for tourism.</p>
+      <p>The platform enables authentic peer-to-peer knowledge sharing about public transport, local food, safety tips, and cultural insights across different countries.</p>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Features</h3>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h4>👥 User Management</h4>
+          <ul>
+            <li>Secure user registration and authentication</li>
+            <li>Profile management with travel preferences</li>
+            <li>Session-based login system</li>
+            <li>Password hashing for security</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>💬 Discussion System</h4>
+          <ul>
+            <li>Post questions in categorized topics</li>
+            <li>Comment-based discussion threads</li>
+            <li>Real-time interaction between travelers</li>
+            <li>Upvoting and community moderation</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🏷️ Organization Features</h4>
+          <ul>
+            <li>Country-based tagging and filtering</li>
+            <li>Category sorting (Food, Transport, Culture)</li>
+            <li>Advanced search functionality</li>
+            <li>Topic-based content discovery</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🚀 Future Enhancements</h4>
+          <ul>
+            <li>AI-powered chatbot for instant answers</li>
+            <li>REST API for mobile app integration</li>
+            <li>Historical discussion analysis</li>
+            <li>Personalized travel recommendations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>💡 Technical Achievements</h3>
+      <div class="challenges-grid">
+        <div class="challenge-item">
+          <strong>Responsive Design:</strong> Built mobile-friendly frontend from scratch
+        </div>
+        <div class="challenge-item">
+          <strong>Django Mastery:</strong> Learned ORM, form handling, and template rendering
+        </div>
+        <div class="challenge-item">
+          <strong>Security Implementation:</strong> Secure authentication with hashed passwords
+        </div>
+        <div class="challenge-item">
+          <strong>NLP Integration:</strong> Experimented with chatbot using basic NLP pipelines
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>📈 Platform Categories</h3>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number">🍽️</div>
+          <div class="result-text">Food & Local Cuisine</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">🚌</div>
+          <div class="result-text">Public Transport Tips</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">🏛️</div>
+          <div class="result-text">Culture & Traditions</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">🛡️</div>
+          <div class="result-text">Safety & Security</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
     // Loading animation
     window.addEventListener('load', () => {
@@ -43,29 +975,131 @@
       }, 1000);
     });
     
-    // Navigation scroll effect
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('nav');
-      if (window.scrollY > 100) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-    });
-    
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
           });
         }
       });
     });
+
+    // Navigation active state
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      // Update active nav link
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Experience expansion functionality
+    function toggleExperience(experienceId) {
+      const details = document.getElementById(experienceId + '-details');
+      const button = document.querySelector(`[data-experience="${experienceId}"] .expand-btn`);
+      const icon = button.querySelector('.expand-icon');
+      const text = button.querySelector('.expand-text');
+      
+      if (details.classList.contains('expanded')) {
+        details.classList.remove('expanded');
+        icon.textContent = '▼';
+        text.textContent = 'View Details';
+        button.classList.remove('expanded');
+      } else {
+        details.classList.add('expanded');
+        icon.textContent = '▲';
+        text.textContent = 'Hide Details';
+        button.classList.add('expanded');
+      }
+    }
+
+    // Modal functionality
+    function openModal(projectId) {
+      const modal = document.getElementById('modalOverlay');
+      const modalBody = document.getElementById('modalBody');
+      const template = document.getElementById(projectId + '-modal');
+      
+      modalBody.innerHTML = template.innerHTML;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modalOverlay');
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements for animation
+    document.querySelectorAll('.timeline-item, .project-card, .skill-category, .contact-link').forEach(item => {
+      observer.observe(item);
+    });
+
+    // Form enhancement
+    const form = document.querySelector('.contact-form');
+    if (form) {
+      const inputs = form.querySelectorAll('input, textarea');
+      
+      inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+          this.parentElement.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', function() {
+          if (!this.value) {
+            this.parentElement.classList.remove('focused');
+          }
+        });
+      });
+    }
   </script>
 </body>
 </html>
