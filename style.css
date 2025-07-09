@@ -1190,6 +1190,59 @@ form input[type="submit"]:hover {
   margin: 0;
 }
 
+/* Professional Introduction */
+.intro-section {
+  margin: 3rem 0;
+}
+
+.professional-intro {
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.professional-intro::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 4rem;
+  color: var(--primary);
+  opacity: 0.3;
+  font-family: Georgia, serif;
+}
+
+.professional-intro::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 204, 0.05));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.professional-intro:hover::after {
+  opacity: 1;
+}
+
+.professional-intro:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-left-color: var(--secondary);
+}
+
 /* Enhanced Timeline Styles */
 .timeline-item {
   opacity: 0;
