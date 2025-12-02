@@ -28,6 +28,50 @@
     <h2>Projects</h2>
     <div class="projects-grid">
       
+      <!-- Offensive Security Lab Project -->
+      <div class="project-card" data-project="offensive-lab">
+        <div class="project-header">
+          <div class="project-icon">🔓</div>
+          <div class="project-status">Research</div>
+        </div>
+        <h3>Offensive Security Lab – Multi-Platform Pentesting Environment</h3>
+        <p class="project-summary">A comprehensive penetration testing lab built with Kali Linux & VirtualBox for hands-on cybersecurity training.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Kali Linux</span>
+          <span class="tech-tag">VirtualBox</span>
+          <span class="tech-tag">Metasploit</span>
+          <span class="tech-tag">BurpSuite</span>
+        </div>
+        <div class="project-actions">
+          <button class="btn-secondary" onclick="openModal('offensive-lab')">View Details</button>
+          <a href="#" target="_blank" class="btn-outline">
+            <span>📋</span> Documentation
+          </a>
+        </div>
+      </div>
+
+      <!-- Active Directory Pentesting Lab Project -->
+      <div class="project-card" data-project="ad-lab">
+        <div class="project-header">
+          <div class="project-icon">🏢</div>
+          <div class="project-status">Research</div>
+        </div>
+        <h3>Active Directory Pentesting Lab – Enterprise AD Simulation</h3>
+        <p class="project-summary">Multi-host Active Directory lab simulating enterprise environments for advanced penetration testing techniques.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Windows Server</span>
+          <span class="tech-tag">Active Directory</span>
+          <span class="tech-tag">PowerShell</span>
+          <span class="tech-tag">Lateral Movement</span>
+        </div>
+        <div class="project-actions">
+          <button class="btn-secondary" onclick="openModal('ad-lab')">View Details</button>
+          <a href="#" target="_blank" class="btn-outline">
+            <span>📋</span> Documentation
+          </a>
+        </div>
+      </div>
+
       <!-- FabroLeather Project -->
       <div class="project-card" data-project="fabro">
         <div class="project-header">
@@ -124,6 +168,262 @@
     <div class="modal-content" onclick="event.stopPropagation()">
       <button class="modal-close" onclick="closeModal()">&times;</button>
       <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Offensive Security Lab Modal Content -->
+  <div id="offensive-lab-modal" class="modal-template">
+    <div class="modal-header">
+      <div class="modal-icon">🔓</div>
+      <div>
+        <h2>Offensive Security Lab – Multi-Platform Pentesting Environment</h2>
+        <p class="modal-subtitle">A comprehensive penetration testing lab for hands-on cybersecurity training</p>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🔧 Tech Stack</h3>
+      <div class="tech-grid">
+        <div class="tech-category">
+          <h4>Platform</h4>
+          <span class="tech-tag">Kali Linux</span>
+          <span class="tech-tag">VirtualBox</span>
+          <span class="tech-tag">VMware</span>
+        </div>
+        <div class="tech-category">
+          <h4>Reconnaissance</h4>
+          <span class="tech-tag">Nmap</span>
+          <span class="tech-tag">OSINT Tools</span>
+          <span class="tech-tag">Maltego</span>
+        </div>
+        <div class="tech-category">
+          <h4>Exploitation</h4>
+          <span class="tech-tag">Metasploit</span>
+          <span class="tech-tag">msfvenom</span>
+          <span class="tech-tag">Custom Scripts</span>
+        </div>
+        <div class="tech-category">
+          <h4>Web Testing</h4>
+          <span class="tech-tag">BurpSuite</span>
+          <span class="tech-tag">SQLmap</span>
+          <span class="tech-tag">Gobuster</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🎯 Lab Purpose</h3>
+      <p>Built a comprehensive offensive security laboratory to develop practical penetration testing skills across multiple platforms and attack vectors. This hands-on environment allows for safe, controlled testing of various cybersecurity techniques.</p>
+    </div>
+
+    <div class="modal-section">
+      <h3>✨ Key Components</h3>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h4>🔍 Reconnaissance Phase</h4>
+          <ul>
+            <li>Network scanning with Nmap and advanced port enumeration</li>
+            <li>OSINT gathering using multiple intelligence sources</li>
+            <li>Service fingerprinting and vulnerability identification</li>
+            <li>Target profiling and attack surface mapping</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>💥 Exploitation Techniques</h4>
+          <ul>
+            <li>Metasploit framework for automated exploitation</li>
+            <li>Custom payload generation with msfvenom</li>
+            <li>Manual exploitation using custom scripts</li>
+            <li>Buffer overflow and memory corruption attacks</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🌐 Web Application Testing</h4>
+          <ul>
+            <li>BurpSuite for comprehensive web app analysis</li>
+            <li>SQL injection testing with SQLmap</li>
+            <li>Directory brute-forcing with Gobuster</li>
+            <li>XSS, CSRF, and other web vulnerabilities</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>📊 Traffic Analysis</h4>
+          <ul>
+            <li>Wireshark for network packet analysis</li>
+            <li>Protocol analysis and anomaly detection</li>
+            <li>Network forensics and evidence gathering</li>
+            <li>Attack pattern identification</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🏆 Platforms Conquered</h3>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number">TryHackMe</div>
+          <div class="result-text">Multiple Linux/Windows boxes</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">VulnHub</div>
+          <div class="result-text">Vulnerable VM challenges</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">HackTheBox</div>
+          <div class="result-text">Advanced penetration testing</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">Notion</div>
+          <div class="result-text">Complete documentation</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>📈 Skills Developed</h3>
+      <div class="challenges-grid">
+        <div class="challenge-item">
+          <strong>Multi-Platform Expertise:</strong> Gained proficiency in both Linux and Windows exploitation techniques
+        </div>
+        <div class="challenge-item">
+          <strong>Tool Mastery:</strong> Advanced usage of industry-standard penetration testing tools
+        </div>
+        <div class="challenge-item">
+          <strong>Documentation:</strong> Comprehensive workflow documentation for knowledge retention
+        </div>
+        <div class="challenge-item">
+          <strong>Methodology:</strong> Structured approach to penetration testing phases
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Active Directory Pentesting Lab Modal Content -->
+  <div id="ad-lab-modal" class="modal-template">
+    <div class="modal-header">
+      <div class="modal-icon">🏢</div>
+      <div>
+        <h2>Active Directory Pentesting Lab – Enterprise AD Simulation</h2>
+        <p class="modal-subtitle">Multi-host Active Directory lab for advanced enterprise penetration testing</p>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🔧 Infrastructure</h3>
+      <div class="tech-grid">
+        <div class="tech-category">
+          <h4>Domain Controller</h4>
+          <span class="tech-tag">Windows Server</span>
+          <span class="tech-tag">Active Directory</span>
+          <span class="tech-tag">DNS/DHCP</span>
+        </div>
+        <div class="tech-category">
+          <h4>Client Machines</h4>
+          <span class="tech-tag">Windows 7</span>
+          <span class="tech-tag">Windows 10</span>
+          <span class="tech-tag">Domain Joined</span>
+        </div>
+        <div class="tech-category">
+          <h4>Attack Tools</h4>
+          <span class="tech-tag">PowerShell</span>
+          <span class="tech-tag">Mimikatz</span>
+          <span class="tech-tag">BloodHound</span>
+        </div>
+        <div class="tech-category">
+          <h4>Techniques</h4>
+          <span class="tech-tag">Lateral Movement</span>
+          <span class="tech-tag">Privilege Escalation</span>
+          <span class="tech-tag">Persistence</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🏢 Lab Architecture</h3>
+      <p>Constructed a realistic enterprise Active Directory environment with multiple hosts to simulate real-world internal penetration testing scenarios. The lab includes proper domain relationships, user accounts, and security configurations.</p>
+    </div>
+
+    <div class="modal-section">
+      <h3>⚔️ Attack Techniques Practiced</h3>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h4>🔍 Domain Enumeration</h4>
+          <ul>
+            <li>Active Directory object discovery and mapping</li>
+            <li>User and group enumeration techniques</li>
+            <li>Service account identification</li>
+            <li>Trust relationship analysis</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🔑 Credential Gathering</h4>
+          <ul>
+            <li>Password spraying and brute force attacks</li>
+            <li>Kerberoasting and ASREPRoasting</li>
+            <li>NTLM hash extraction and cracking</li>
+            <li>Golden and Silver ticket attacks</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>🔄 Lateral Movement</h4>
+          <ul>
+            <li>Pass-the-Hash and Pass-the-Ticket attacks</li>
+            <li>WMI and PowerShell remoting exploitation</li>
+            <li>SMB relay attacks and exploitation</li>
+            <li>Cross-machine pivoting techniques</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h4>⬆️ Privilege Escalation</h4>
+          <ul>
+            <li>Domain Controller compromise techniques</li>
+            <li>Administrative privilege acquisition</li>
+            <li>Service account exploitation</li>
+            <li>Persistence mechanism implementation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>🎯 Realistic Attack Scenarios</h3>
+      <div class="challenges-grid">
+        <div class="challenge-item">
+          <strong>Internal Network Simulation:</strong> Realistic enterprise network with proper segmentation
+        </div>
+        <div class="challenge-item">
+          <strong>Multi-Host Pivoting:</strong> Advanced techniques for moving between compromised systems
+        </div>
+        <div class="challenge-item">
+          <strong>Domain Controller Discovery:</strong> Systematic approach to identifying critical infrastructure
+        </div>
+        <div class="challenge-item">
+          <strong>Controlled Account Creation:</strong> Safe testing of persistence mechanisms
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h3>📈 Skills Mastered</h3>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number">AD Attacks</div>
+          <div class="result-text">Advanced Active Directory exploitation</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">Lateral Movement</div>
+          <div class="result-text">Cross-system compromise techniques</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">Privilege Escalation</div>
+          <div class="result-text">Domain admin compromise methods</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">Enterprise Security</div>
+          <div class="result-text">Real-world attack simulation</div>
+        </div>
+      </div>
     </div>
   </div>
 
